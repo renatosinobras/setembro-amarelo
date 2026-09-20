@@ -12,11 +12,14 @@ const MESSAGES = [
   "Pequenas conquistas também são conquistas. Comemore o que for possível hoje.",
   "Você não está sozinho(a). Tem gente disposta a ouvir, sem julgamento.",
   "Respire. Você já chegou até aqui, e isso significa muito.",
-  "Se hoje foi difícil, seja gentil com você mesmo(a) — amanhã é uma nova chance."
+  "Se hoje foi difícil, seja gentil com você mesmo(a) — amanhã é uma nova chance.",
+  "Perceber, ouvir e acolher: às vezes é isso que alguém precisa de você hoje.",
+  "Conversar sobre o que pesa não enfraquece ninguém. Fortalece a todos."
 ];
 
 const cardText = document.getElementById("cardText");
 const actionBtn = document.getElementById("actionBtn");
+const btnLabel = document.getElementById("btnLabel");
 
 let lastIndex = -1;
 
@@ -33,12 +36,11 @@ function pickMessage() {
 function showMessage() {
   cardText.classList.remove("animate");
   cardText.textContent = pickMessage();
-  // restart animation
   void cardText.offsetWidth;
   cardText.classList.add("animate");
 
   if (actionBtn.dataset.state !== "again") {
-    actionBtn.textContent = "Quero receber outra 💛";
+    btnLabel.textContent = "Quero receber outra";
     actionBtn.dataset.state = "again";
   }
 }
