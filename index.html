@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Setembro Amarelo — Receba uma mensagem</title>
-<meta name="description" content="Clique e receba uma mensagem de apoio. Uma ação do Setembro Amarelo.">
+<meta name="description" content="Segurança Psicológica: Perceber. Ouvir. Acolher e Conectar. Clique e receba uma mensagem de apoio.">
+<meta name="theme-color" content="#14305F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314305F'/%3E%3Cpath d='M16 25s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 24 14c0 6-8 11-8 11z' fill='%23F8BE38'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,24 +17,40 @@
   <div class="page">
 
     <header class="header">
-      <span class="ribbon" aria-hidden="true">🎗️</span>
-      <p class="eyebrow">Setembro Amarelo</p>
-      <h1 class="title">Tem mensagens que encontram a gente na hora certa.</h1>
+      <img class="brand" src="logo.svg" alt="Aço Cearense">
+
+      <img class="wordmark" src="wordmark.svg" alt="Setembro Amarelo">
+
+      <p class="tagline">
+        <span>Segurança Psicológica:</span>
+        <strong>Perceber. Ouvir. Acolher e Conectar.</strong>
+      </p>
     </header>
 
     <main class="main">
-      <div class="card" id="card" aria-live="polite">
-        <p class="card-text" id="cardText">Clique no botão abaixo e receba uma mensagem para o seu dia.</p>
+      <h1 class="lead">Tem mensagens que encontram a gente na hora certa.</h1>
+
+      <div class="card">
+        <p class="card-text" id="cardText" aria-live="polite">Clique no botão abaixo e receba uma mensagem para o seu dia.</p>
       </div>
 
-      <button class="btn" id="actionBtn" type="button">Receber uma mensagem 💛</button>
+      <button class="btn" id="actionBtn" type="button">
+        <span id="btnLabel">Receber uma mensagem</span>
+        <svg class="btn-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.1-8-11a4.6 4.6 0 0 1 8-2.9A4.6 4.6 0 0 1 20 10c0 5.9-8 11-8 11z"/></svg>
+      </button>
     </main>
 
     <footer class="footer">
-      <p>Setembro Amarelo é o mês de valorização da vida e prevenção ao suicídio.</p>
-      <p>Precisa conversar com alguém agora? Ligue para o <strong>CVV — 188</strong> (ligação gratuita, 24h, todos os dias) ou acesse
-        <a href="https://www.cvv.org.br" target="_blank" rel="noopener">cvv.org.br</a>.</p>
+      <p>Nem todo sinal de sofrimento é visível. Estar atento, ouvir com respeito e acolher sem julgamentos pode fazer a diferença.</p>
+      <p class="cvv">Precisa conversar com alguém agora? Ligue para o <strong>CVV — 188</strong> (gratuito, 24h) ou acesse <a href="https://www.cvv.org.br" target="_blank" rel="noopener">cvv.org.br</a>.</p>
     </footer>
+
+    <div class="ribbon" aria-hidden="true">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path fill="#E3A421" d="M0 108C260 14 470 132 720 132s470-118 720-24v18c-250-94-460 24-720 24S260 32 0 126z"/>
+        <path fill="#F8BE38" d="M0 78C260-16 470 102 720 102s470-118 720-24v40c-250-94-460 24-720 24S260 2 0 96z"/>
+      </svg>
+    </div>
 
   </div>
 
